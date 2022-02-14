@@ -1,0 +1,35 @@
+{
+    "recentDate": "2021-06-01",
+    "pastDate": "2016-06-01",
+    "offset": 0,
+    "limit": 15,
+    "totalRecords": 1,
+    "dateOfOldestRecord": "2021-04-29",
+    "history": [
+        {
+            "date": "2021-04-29",
+            "label": "Adjustments",
+            "type": "AD",
+            "amount": -29,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "",
+            "billDetails": [],
+            "payDetail": null
+        }
+    ],
+    "filterCriteriaRecords": [
+        {
+            "filterType": "C1AD",
+            "filterTypeDescription": "Adjustments"
+        },
+        {
+            "filterType": "C1BL",
+            "filterTypeDescription": "Bills"
+        },
+        {
+            "filterType": "C1PS",
+            "filterTypeDescription": "Payments"
+        }
+    ]
+}

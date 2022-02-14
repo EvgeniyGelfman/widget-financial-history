@@ -1,0 +1,48 @@
+/**
+ * x-web-default-resources is our style framework for building x-web widgets.
+ * You should re-use those as much as possible in building your widget. However, if it
+ * can't do everything for you, then add your own widget-specific styles here.
+ *
+ * Note that it is not necessarily to wrap all your scss in a single selector;
+ * all styles you add here will automatically be scoped to this widget.
+ *
+ * This is your top-level scss file. All other scss you want to include must be `@import`'d from this file.
+ */
+//@import '../app/features/example-feature/op-example-feature';
+
+// Just to avoid overlapping with the fixture picker.
+.widget-financial-history-root  {
+  table tr:nth-of-type(even) {
+    background: $bg-alternate-color;
+  }
+  
+  @import "../node_modules/@opower/dss-react-components/styles/spinner";
+  @import "disclosable-mixin";
+  @import "variables";
+  @import "activity";
+  @import "history";
+  @import "pagination-control";
+  @import "errors";
+  @import "toolbar";
+  @import '../src/components/filter/index';
+
+  pre {
+    margin: 0;
+  }
+
+  .disclosable {
+    @include disclosable;
+    &:before {
+      top: unset;
+      left: unset;
+      margin-left:  $spacing*-1;
+      margin-top: $halfSpacing;
+    }
+  }
+
+  .activity-description a {
+    color: $text-color;
+  }
+
+  background: #F1F1F1;
+}

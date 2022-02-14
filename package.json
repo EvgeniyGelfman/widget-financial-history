@@ -1,0 +1,113 @@
+{
+    "name": "widget-financial-history",
+    "version": "1.10.0-0",
+    "buildToolVersion": "4.47.0",
+    "main": "./index.js",
+    "author": "dss-dev_ww_grp@oracle.com",
+    "repository": {
+        "type": "git",
+        "url": "git://github.va.opower.it/digital-self-service/widget-financial-history.git"
+    },
+    "sideEffects": false,
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "maestro --build:styles:mixin=true",
+        "lint": "eslint .",
+        "pretest": "npm run lint && npm run changelog:check",
+        "build-stories": "build-storybook --quiet",
+        "storybook": "start-storybook -p 6006",
+        "changelog:check": "steno check",
+        "test:browser": "ava --verbose test/browser/*.test.js",
+        "test:config": "ava --verbose config.test.js",
+        "test:messages": "ava --verbose messages.test.js",
+        "test:unit": "karma start --single-run",
+        "test:vrt": "build-storybook --quiet && loki --chromeDockerImage docker.iad.opower.it/yukinying/chrome-headless:63.0.3230.2 --requireReference --reactUri file:$PWD/storybook-static",
+        "test": "npm run test:config && npm run test:messages && npm run test:unit && npm run test:vrt && npm run test:browser",
+        "generate-docs": "x-web-document-config",
+        "version": "npm run generate-docs && git add -A docs"
+    },
+    "dependencies": {
+        "@opower/account-namespace": "^2.3.9",
+        "@opower/dss-permissions-components": "^1.0.6",
+        "@opower/javascript-tools": "^0.0.2",
+        "@opower/payments-namespace": "^3.0.4",
+        "@opower/config-schema": "^1.13.0",
+        "@opower/dss-react-components": "^2.1.7",
+        "@opower/fetch": "^2.0.2",
+        "@opower/i18next-config": "^1.1.0",
+        "@opower/maestro-react": "^1.6.1",
+        "@opower/maestro-runtime": "^1.20.0",
+        "@opower/react-iconic": "^1.0.3",
+        "@opower/steno": "^1.0.1",
+        "@opower/widget-store": "^1.0.0",
+        "blob": "0.0.5",
+        "classnames": "^2.2.6",
+        "filesaver.js": "^1.3.4",
+        "jsonschema": "^1.2.4",
+        "lodash": "^4.17.15",
+        "moment-timezone": "^0.5.23",
+        "normalizr": "^3.3.0",
+        "opattern-icons": "^2.1.4",
+        "opattern-react": "^1.2.0",
+        "prop-types": "^15.6.1",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-i18next": "^7.12.0",
+        "react-redux": "^7.1.3",
+        "redux": "^4.0.4",
+        "svg-react-loader": "^0.4.6",
+        "redux-thunk": "latest"
+    },
+    "devDependencies": {
+        "@opower/browser-test": "^1.22.2",
+        "@opower/browser-test-utils": "^1.2.0",
+        "@opower/eslint-config": "^2.1.0",
+        "@opower/karma-config": "^2.1.0",
+        "@opower/storybook-react-config": "^2.0.2",
+        "@opower/url": "^1.1.1",
+        "@storybook/addon-viewport": "5.2.6",
+        "@storybook/react": "5.2.6",
+        "ava": "^0.25.0",
+        "chai": "^4.1.2",
+        "chai-enzyme": "^1.0.0-beta.1",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.7.0",
+        "eslint": "^5.9.0",
+        "eslint-plugin-chai-friendly": "^0.4.1",
+        "fetch-mock": "^7.2.5",
+        "karma": "^2.0.4",
+        "loki": "^0.14.2",
+        "react-test-renderer": "^16.12.0",
+        "redux-mock-store": "^1.5.3",
+        "sinon": "^8.1.1",
+        "sinon-chai": "^3.4.0",
+        "x-web-default-resources": "^9.26.0",
+        "x-web-widget-test-utils": "^1.8.2"
+    },
+    "nextwebDependencies": {
+        "x-web-default-resources": "^9.26.0"
+    },
+    "loki": {
+        "diffingEngine": "looks-same",
+        "configurations": {
+            "chrome.laptop": {
+                "target": "chrome.docker",
+                "width": 1366,
+                "height": 768,
+                "deviceScaleFactor": 1,
+                "mobile": false,
+                "fitWindow": false
+            },
+            "chrome.iphone": {
+                "target": "chrome.docker",
+                "width": 320,
+                "height": 568,
+                "deviceScaleFactor": 1,
+                "mobile": true,
+                "preset": "iPhone 5",
+                "fitWindow": false
+            }
+        },
+        "chromeFlags": "--headless --disable-gpu --hide-scrollbars --disable-web-security"
+    }
+}

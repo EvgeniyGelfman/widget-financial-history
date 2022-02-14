@@ -1,0 +1,35 @@
+.loading-error {
+  text-align: center;
+}
+
+.loading-error__icon {
+  @include size(2.5rem);
+  fill: $alert-color;
+}
+
+.loading-error__heading {
+  @include display-smaller;
+  margin-bottom: $quarterSpacing;
+}
+
+.loading-error--full-row {
+  .loading-error__icon {
+    @include size(4rem);
+    margin-bottom: $spacing;
+  }
+
+  @media #{$medium-up} {
+    .loading-error__icon {
+      @include size(5rem);
+    }
+  }
+}
+
+.loading-error--nested-block {
+  background: $bg-alternate-color;
+  padding: $spacing*2 $spacing;
+
+  @media #{$medium-up} {
+    padding: $spacing*3 $spacing;
+  }
+}

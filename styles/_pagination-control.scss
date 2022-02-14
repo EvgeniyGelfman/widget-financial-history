@@ -1,0 +1,29 @@
+.pagination-control {
+    text-align: center;
+    padding: $halfSpacing $spacing;
+    background: $bg-alternate-color;
+}
+.pagination-control__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $quiet-font-color;
+}
+@media #{$medium-up} {
+    .pagination-control__controls {
+        justify-content: flex-end;
+    }
+}
+
+.pagination-button {
+    border: 0;
+    padding: $quarterSpacing $halfSpacing;
+}
+.pagination-button--disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.pagination-button__icon {
+    @include size(1rem);
+    fill: $medium-gray;
+}

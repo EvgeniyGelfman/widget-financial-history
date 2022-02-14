@@ -1,0 +1,33 @@
+{
+    "recentDate": "2021-06-01",
+    "pastDate": "2016-06-01",
+    "offset": null,
+    "limit": null,
+    "totalRecords": null,
+    "dateOfOldestRecord": null,
+    "history": [
+        {
+            "date": "2021-04-29",
+            "label": "Adjustments",
+            "type": "AD",
+            "amount": -29,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "",
+            "billDetails": null,
+            "payDetail": null
+        },
+        {
+            "date": "2021-04-01",
+            "label": "Bill",
+            "type": "C",
+            "amount": 29,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "003811456573",
+            "billDetails": null,
+            "payDetail": null
+        }
+    ],
+    "filterCriteriaRecords": null
+}

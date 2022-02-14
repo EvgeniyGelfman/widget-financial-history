@@ -1,0 +1,103 @@
+{
+    "recentDate": "2018-12-30",
+    "pastDate": "2013-12-20",
+    "offset": 0,
+    "totalRecords": 13,
+    "history": [
+        {
+            "date": "2018-10-24",
+            "label": "Payment",
+            "type": "P",
+            "amount": 33.3,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "17756232103444",
+                "payEventId": "123143106623",
+                "paymentId": "223100106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "37",
+                        "paymentTypeDescription": "Saving",
+                        "tenderAmount": 33.3,
+                        "cardType": null,
+                        "cardTypeDescription": null,
+                        "last4DigitsOfCardNumber": null,
+                        "last4DigitsOfAccountNumber": "2142",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    },
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": null,
+                        "paymentTypeDescription": "Saving",
+                        "amount": 33.3,
+                        "cardType": null,
+                        "cardTypeDescription": null,
+                        "last4DigitsOfCardNumber": null,
+                        "last4DigitsOfAccountNumber": "2142",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2018-10-15",
+            "label": "Bill",
+            "type": "C",
+            "amount": -8.7,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "12274411215",
+            "billDetails": [
+                {
+                    "label": "Gas Service",
+                    "amount": 41.3,
+                    "currency": "$"
+                },
+                {
+                    "label": "Adjustment",
+                    "amount": -50.0,
+                    "currency": "$"
+                }
+            ],
+            "payDetail": null
+        },
+        {
+            "date": "2018-09-23",
+            "label": "Payment",
+            "type": "P",
+            "amount": 38,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billDetails": [],
+            "billId": "",
+            "payDetail": {
+                "confirmationNumber": "06456232103444",
+                "payEventId": "243143106623",
+                "paymentId": "2431456106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "27",
+                        "paymentTypeDescription": "Checking",
+                        "tenderAmount": 38,
+                        "cardType": null,
+                        "cardTypeDescription": null,
+                        "last4DigitsOfCardNumber": null,
+                        "last4DigitsOfAccountNumber": "2812",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+.toolbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; // this will move download history to the flex-end
+
+  @media #{$small-only} {
+    flex-flow: row wrap-reverse;
+    .fh__download {
+      margin: 0;
+      padding-top: 0;
+      width: 100%;
+      text-align: end;
+    }
+  }
+  .date-filter-container {
+    margin-bottom: $spacing*1;
+
+    @media #{$small-only} {
+      width: 100%;
+    }
+  }
+
+  .transaction-filter-container {
+    margin-bottom: $spacing*1;
+
+    @media #{$small-only} {
+      width: 100%;
+    }
+  }
+
+  .fh__download {
+    margin-bottom: $spacing*1;
+
+    .button.add-button-margins {
+      padding-bottom: 0;
+      padding-left: $spacing*2;
+      margin: 2em 0 0;
+      max-height: $font-size-large;
+    }
+
+    .has-icon {
+      .spin-loader {
+        width: 1rem;
+        height: 1rem;
+      }
+      .op-spin-loader, .spinner.visible {
+        display: contents;
+      }
+    }
+  }
+}

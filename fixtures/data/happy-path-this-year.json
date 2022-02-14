@@ -1,0 +1,140 @@
+{
+  "recentDate": "2018-12-30",
+  "pastDate": "2017-12-20",
+  "offset": 0,
+  "totalRecords": 5,
+  "history": [{
+    "date": "2021-10-24",
+    "label": "Payment",
+    "type": "P",
+    "amount": 33.3,
+    "currency": "$",
+    "currencyCode": "USD",
+    "billId": null,
+    "billDetails": [],
+    "payDetail": {
+      "confirmationNumber": "17756232103444",
+      "payEventId": "123143106623",
+      "paymentId": "223100106",
+      "tenderDetails": [
+        {
+          "tenderType": "APSV",
+          "tenderTypeDescription": "Checking - Auto Pay - CSS",
+          "paymentType": "47",
+          "paymentTypeDescription": "CREDITCARD",
+          "tenderAmount": 535.13,
+          "cardType": "C1VS",
+          "cardTypeDescription": "VISA",
+          "last4DigitsOfCardNumber": "3832",
+          "last4DigitsOfAccountNumber": null,
+          "last4DigitsOfRoutingNumber": null,
+          "bankName": null
+        }
+      ]
+    }
+  }, {
+    "date": "2021-10-15",
+    "label": "Bill",
+    "type": "C",
+    "amount": 41.3,
+    "currency": "$",
+    "currencyCode": "USD",
+    "billId": "122734411215",
+    "billDetails": [{
+      "label": "Gas Service",
+      "amount": 41.3,
+      "currency": "$"
+    }],
+    "payDetail": null
+  }, {
+    "date": "2021-09-23",
+    "label": "Payment",
+    "type": "P",
+    "amount": 38,
+    "currency": "$",
+    "currencyCode": "USD",
+    "billDetails": [],
+    "billId": null,
+    "payDetail": {
+      "confirmationNumber": "06456232103444",
+      "payEventId": "243143106623",
+      "paymentId": "2431456106",
+      "tenderDetails": [
+        {
+          "tenderType": "APSV",
+          "tenderTypeDescription": "Checking - Auto Pay - CSS",
+          "paymentType": "47",
+          "paymentTypeDescription": "CREDITCARD",
+          "tenderAmount": 535.13,
+          "cardType": "C1VS",
+          "cardTypeDescription": "VISA",
+          "last4DigitsOfCardNumber": "3832",
+          "last4DigitsOfAccountNumber": null,
+          "last4DigitsOfRoutingNumber": null,
+          "bankName": null
+        }
+      ]
+    }
+  }, {
+    "date": "2021-09-12",
+    "label": "Bill",
+    "type": "C",
+    "amount": 38.0,
+    "currency": "$",
+    "currencyCode": "USD",
+    "billId": "33924486123115",
+    "billDetails": [{
+      "label": "Previous Balance",
+      "amount": 15.5,
+      "currency": "$"
+    }, {
+      "label": "Gas Service",
+      "amount": 22.5,
+      "currency": "$"
+    }],
+    "payDetail": null
+  }, {
+    "date": "2021-09-07",
+    "label": "Payment",
+    "type": "P",
+    "amount": 55.0,
+    "currency": "$",
+    "currencyCode": "USD",
+    "billId": null,
+    "billDetails": [],
+    "payDetail": {
+      "confirmationNumber": "06456306103232",
+      "payEventId": "243143106623",
+      "paymentId": "21334123234",
+      "tenderDetails": [
+        {
+          "tenderType": "APSV",
+          "tenderTypeDescription": "Checking - Auto Pay - CSS",
+          "paymentType": "47",
+          "paymentTypeDescription": "CREDITCARD",
+          "tenderAmount": 145.13,
+          "cardType": "C1VS",
+          "cardTypeDescription": "VISA",
+          "last4DigitsOfCardNumber": "3832",
+          "last4DigitsOfAccountNumber": null,
+          "last4DigitsOfRoutingNumber": null,
+          "bankName": null
+        }
+      ]
+    }
+  }],
+  "filterCriteriaRecords": [
+    {
+          "filterType": "C1AD",
+          "filterTypeDescription": "Adjustments"
+      },
+      {
+          "filterType": "C1BL",
+          "filterTypeDescription": "Bills"
+      },
+      {
+          "filterType": "C1PS",
+          "filterTypeDescription": "Payments"
+      }
+  ]
+}

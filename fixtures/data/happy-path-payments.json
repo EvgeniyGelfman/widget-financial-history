@@ -1,0 +1,245 @@
+{
+    "recentDate": "2018-12-30",
+    "pastDate": "2013-12-20",
+    "offset": 0,
+    "totalRecords": 13,
+    "history": [
+        {
+            "date": "2018-10-24",
+            "label": "Payment",
+            "type": "P",
+            "amount": 33.3,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "17756232103444",
+                "payEventId": "123143106623",
+                "paymentId": "223100106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "37",
+                        "paymentTypeDescription": "Saving",
+                        "tenderAmount": 33.3,
+                        "cardType": null,
+                        "cardTypeDescription": null,
+                        "last4DigitsOfCardNumber": null,
+                        "last4DigitsOfAccountNumber": "2142",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": "Bank of America"
+                    },
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": null,
+                        "paymentTypeDescription": "Saving",
+                        "amount": 33.3,
+                        "cardType": null,
+                        "cardTypeDescription": null,
+                        "last4DigitsOfCardNumber": null,
+                        "last4DigitsOfAccountNumber": "2142",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": "Bank of America"
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2018-09-23",
+            "label": "Payment",
+            "type": "P",
+            "amount": 38,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billDetails": [],
+            "billId": "",
+            "payDetail": {
+                "confirmationNumber": "06456232103444",
+                "payEventId": "243143106623",
+                "paymentId": "2431456106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "27",
+                        "paymentTypeDescription": "Checking",
+                        "tenderAmount": 38,
+                        "cardType": null,
+                        "cardTypeDescription": null,
+                        "last4DigitsOfCardNumber": null,
+                        "last4DigitsOfAccountNumber": "2812",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2019-03-08",
+            "label": "Payment Cancelled",
+            "type": "PX",
+            "amount": 1.26,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "36815125573201",
+                "payEventId": "344888705355",
+                "paymentId": "344919459473",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "CREDITCARD",
+                        "paymentTypeDescription": "CREDITCARD",
+                        "tenderAmount": 1.26,
+                        "cardType": "C1MC",
+                        "cardTypeDescription": "MasterCard",
+                        "last4DigitsOfCardNumber": "5454",
+                        "last4DigitsOfAccountNumber": "",
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": ""
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2018-04-24",
+            "label": "Payment",
+            "type": "P",
+            "amount": 50.0,
+            "currency": "$",
+            "currencyCode": "USD",
+            "billId": "",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "06456306103232",
+                "payEventId": "243143106623",
+                "paymentId": "2431963106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "47",
+                        "paymentTypeDescription": "CREDITCARD",
+                        "tenderAmount": 145.13,
+                        "cardType": "C1AM",
+                        "cardTypeDescription": "American Express",
+                        "last4DigitsOfCardNumber": "3832",
+                        "last4DigitsOfAccountNumber": null,
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2018-02-22",
+            "label": "Payment",
+            "type": "P",
+            "amount": 70,
+            "billId": "",
+            "currency": "$",
+            "currencyCode": "USD",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "064563023203111",
+                "payEventId": "243143106623",
+                "paymentId": "247743106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "47",
+                        "paymentTypeDescription": "CREDITCARD",
+                        "tenderAmount": 112.13,
+                        "cardType": "C1VS",
+                        "cardTypeDescription": "VISA",
+                        "last4DigitsOfCardNumber": "3832",
+                        "last4DigitsOfAccountNumber": null,
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2018-02-25",
+            "label": "Payment",
+            "type": "P",
+            "amount": 115.5,
+            "billId": "",
+            "currency": "$",
+            "currencyCode": "USD",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "06451116103018",
+                "payEventId": "243143106623",
+                "paymentId": "243178106",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "47",
+                        "paymentTypeDescription": "CREDITCARD",
+                        "tenderAmount": 535.13,
+                        "cardType": "C1VS",
+                        "cardTypeDescription": "VISA",
+                        "last4DigitsOfCardNumber": "3832",
+                        "last4DigitsOfAccountNumber": null,
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        },
+        {
+            "date": "2018-01-10",
+            "label": "Payment",
+            "type": "P",
+            "amount": 222.5,
+            "billId": "",
+            "currency": "$",
+            "currencyCode": "USD",
+            "billDetails": [],
+            "payDetail": {
+                "confirmationNumber": "88856306103018",
+                "payEventId": "243143112623",
+                "paymentId": "243142306",
+                "tenderDetails": [
+                    {
+                        "tenderType": "APSV",
+                        "tenderTypeDescription": "Checking - Auto Pay - CSS",
+                        "paymentType": "47",
+                        "paymentTypeDescription": "CREDITCARD",
+                        "tenderAmount": 98.13,
+                        "cardType": "C1VS",
+                        "cardTypeDescription": "VISA",
+                        "last4DigitsOfCardNumber": "3832",
+                        "last4DigitsOfAccountNumber": null,
+                        "last4DigitsOfRoutingNumber": null,
+                        "bankName": null
+                    }
+                ]
+            }
+        }
+    ],
+    "filterCriteriaRecords": [
+        {
+            "filterType": "C1AD",
+            "filterTypeDescription": "Adjustments"
+        },
+        {
+            "filterType": "C1BL",
+            "filterTypeDescription": "Bills"
+        },
+        {
+            "filterType": "C1PS",
+            "filterTypeDescription": "Payments"
+        }
+    ]
+}

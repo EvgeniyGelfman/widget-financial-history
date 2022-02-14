@@ -1,0 +1,60 @@
+@mixin disclosable(
+  $arrow-size:8px,
+  $arrow-position: 12px,
+  $disclose-icon-ypos: 50%,
+  $arrow-side: "left",
+  $arrow-initial-direction: "right",
+  $arrow-rotation-deg: 90,
+  $default-color: $anchor-font-color,
+  $hover-color: $anchor-font-color) {
+  @include transition(color $transition-speed-faster);
+
+  $arrow-initial-rotation: 0;
+
+  @if $arrow-initial-direction == "right" {
+    $arrow-initial-rotation: 0;
+  } @else if $arrow-initial-direction == "down" {
+    $arrow-initial-rotation: 90;
+  } @else if $arrow-initial-direction == "left" {
+    $arrow-initial-rotation: 180;
+  } @else if $arrow-initial-direction == "up" {
+    $arrow-initial-rotation: 270;
+  }
+
+  $arrow-right: null;
+  $arrow-left: ($arrow-position + $arrow-size)*-1;
+
+  @if $arrow-side == "right" {
+    $arrow-left: null;
+    $arrow-right: ($arrow-position + ($arrow-size*2))*-1;
+  }
+
+  &:before {
+    @include position(absolute, $disclose-icon-ypos $arrow-right null $arrow-left);
+    @include size(0);
+    content: "";
+    border-style: solid;
+    border-width: $arrow-size*0.75 $arrow-position $arrow-size*0.75 $arrow-size;
+    border-color: transparent transparent transparent $default-color;
+    transform-origin: ($arrow-size/2) top;
+    @include transform(rotate($arrow-initial-rotation + deg) translateY(-50%));
+    @include transition-property(border-color, transform);
+    @include transition-duration($transition-speed, $transition-speed-faster);
+  }
+  &.open {
+    &:before {
+      @include transform(rotate(($arrow-initial-rotation + $arrow-rotation-deg) + deg) translateY(-50%));
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    @if $hover-color != $default-color {
+      color: $hover-color;
+      &:before {
+        border-left-color: $hover-color;
+      }
+    } @else {
+      color: $default-color;
+    }
+  }
+}
