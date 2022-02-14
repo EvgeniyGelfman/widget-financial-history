@@ -1,0 +1,42 @@
+.filterWrapper {
+    display: flex;
+    align-items: baseline;
+    
+    > div {
+        margin-right: $spacing;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .button.add-button-margins {
+        padding-bottom: 0;
+        padding-left: 0;
+        margin: 2em 0 0;
+        max-height: $font-size-large;
+        
+        @media #{$small-only} {
+            align-self: flex-end;
+            margin-top: 0;
+        }
+    }
+
+    .button.disabled {
+        background-color: transparent;
+        color: $disabled-button-color;
+        padding: 0;
+
+        @media #{$small-only} {
+            align-self: flex-end;
+            margin-top: 0;
+            padding-right: $quarterSpacing;
+        }
+    }
+
+    @media #{$small-only} {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: $spacing;
+    }
+}
