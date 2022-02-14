@@ -1,0 +1,36 @@
+{
+  "id": "/history",
+  "type": "object",
+  "required": [
+    "recentDate",
+    "pastDate",
+    "history",
+    "offset"
+  ],
+  "properties": {
+    "recentDate": {"type": "string"},
+    "pastDate": {"type": "string"},
+    "limit": {"type": ["null", "number"]},
+    "offset": {"type": "number"},
+    "totalRecords": {"type": ["null", "number"]},
+    "dateOfOldestRecord": {"type": ["null", "string"]},
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "anyOf": [{"$ref": "/bill"}, {"$ref": "/payment"}]
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "not": {
+        "properties": {
+          "offset": { "enum": [0] }
+        },
+        "required": []
+      }
+    },
+    { "required": ["totalRecords"] }
+  ]
+}

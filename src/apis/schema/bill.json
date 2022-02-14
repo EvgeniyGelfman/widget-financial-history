@@ -1,0 +1,41 @@
+{
+  "id": "/bill",
+  "type": "object",
+  "required": [
+    "date",
+    "label",
+    "type",
+    "amount",
+    "billId",
+    "currency",
+    "currencyCode"
+  ],
+  "properties": {
+    "date": {"type": "string"},
+    "label": {"type": "string"},
+    "type": {"type": "string"},
+    "amount": {"type": ["number", "null"]},
+    "currency": {"type": "string"},
+    "currencyCode": {"type": "string"},
+    "billId": {"type": ["null", "string", "number"]},
+    "billDetails": {
+      "type": ["array", "null"],
+      "items": {
+        "type": ["object", "null"],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "additionalProperties": true
+  }
+}

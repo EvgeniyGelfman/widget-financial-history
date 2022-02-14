@@ -1,0 +1,44 @@
+{
+  "id": "/payment",
+  "type": "object",
+  "required": [
+    "date",
+    "label",
+    "type",
+    "amount",
+    "currency",
+    "currencyCode"
+  ],
+  "properties": {
+    "date": {"type": "string"},
+    "label": {"type": "string"},
+    "type": {"type": "string"},
+    "amount": {"type": "number"},
+    "currency": {"type": "string"},
+    "currencyCode": {"type": "string"},
+    "payDetail": {
+      "type": "object",
+      "properties": {
+        "confirmationNumber": {"type": "string"},
+        "payEventId": {"type": "string"},
+        "paymentId": {"type": "string"},
+        "tenderDetails": {
+          "type": "object",
+          "properties": {
+            "tenderType": {"type": "string"},
+            "tenderTypeDescription": {"type": "string"},
+            "paymentType": {"type": "string"},
+            "paymentTypeDescription": {"type": "string"},
+            "cardType": {"type": "string"},
+            "cardTypeDescription": {"type": "string"},
+            "last4DigitsOfCardNumber": {"type": "string"},
+            "last4DigitsOfAccountNumber": {"type": ["null", "string"]},
+            "last4DigitsOfRoutingNumber": {"type": ["null", "string"]},
+            "bankName": {"type": ["null", "string"]},
+            "tenderAmount": {"type": "number"}
+          }
+        }
+      }
+    }
+  }
+}
